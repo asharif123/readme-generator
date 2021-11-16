@@ -64,7 +64,7 @@ inquirer.prompt([
     {
         type: 'input',
         message: 'Enter the title for your Contribution section\n',
-        name: 'contrubition'
+        name: 'contribution'
     },
 
     {
@@ -99,9 +99,9 @@ inquirer.prompt([
     fs.appendFileSync("README.md", JSON.stringify(response.installationInstructions) + "\n\n");
     fs.appendFileSync("README.md", JSON.stringify("**" + response.usage + ":**") + "\n\n");
     fs.appendFileSync("README.md", JSON.stringify(response.usageInstructions) + "\n\n");
-    fs.appendFileSync("README.md", JSON.stringify(response.contribution) + "\n\n");
+    fs.appendFileSync("README.md", JSON.stringify("**" + response.contribution + "**") + "\n\n");
     fs.appendFileSync("README.md", JSON.stringify(response.contributionInstructions) + "\n\n");
-    fs.appendFileSync("README.md", JSON.stringify(response.testing) + "\n\n");
+    fs.appendFileSync("README.md", JSON.stringify("**" + response.testing + "**") + "\n\n");
     fs.appendFileSync("README.md", JSON.stringify(response.testingInstructions) + "\n\n");
 
 
