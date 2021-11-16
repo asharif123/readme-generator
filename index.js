@@ -37,10 +37,17 @@ inquirer.prompt([
         type: 'input',
         message: 'Enter the description title',
         name: 'description'
+    },
+    {
+        type: 'input',
+        message: 'Enter information about your readme file',
+        name: 'descriptionInformation'
     }
+
 
 ]).then((response) => { 
     fs.writeFileSync("README.md", JSON.stringify("**" + response.title + "**") + "\n\n\n");
-    fs.appendFileSync("README.md", JSON.stringify('**' + response.description + "**"))
+    fs.appendFileSync("README.md", JSON.stringify('**' + response.description + "**"));
+    fs.appendFileSync("README.md", JSON.stringify(response.descriptionInformation));
 })
 .catch((error) => (console.log(error)))
