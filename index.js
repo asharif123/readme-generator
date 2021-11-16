@@ -34,6 +34,6 @@ inquirer.prompt([
         name: 'title'
     }
 ]).then((response) => {
-    fs.writeFileSync("README.md", JSON.stringify("**" + response.title + "**"));
+    fs.writeFileSync("README.md", JSON.stringify("#**" + response.title + "**"));
 })
 .catch((error) => (console.log(error)))
