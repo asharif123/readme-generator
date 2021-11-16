@@ -47,7 +47,7 @@ inquirer.prompt([
 
 ]).then((response) => { 
     fs.writeFileSync("README.md", JSON.stringify("**" + response.title + "**") + "\n\n\n");
-    fs.appendFileSync("README.md", JSON.stringify('**' + response.description + "**"));
+    fs.appendFileSync("README.md", JSON.stringify('**' + response.description + "**") + "\n");
     fs.appendFileSync("README.md", JSON.stringify(response.descriptionInformation));
 })
 .catch((error) => (console.log(error)))
