@@ -26,29 +26,43 @@ const fs = require("fs");
 inquirer.prompt([
     {
         type: 'input',
-        message: 'Enter the title of your readme file',
+        message: 'Enter the title of your readme file\n',
         name: 'title'
     },
     {
         type: 'input',
-        message: 'Enter the title for your Description section',
+        message: 'Enter the title for your Description section\n',
         name: 'description'
     },
     {
         type: 'input',
-        message: 'Enter information about your readme file under Description heading',
+        message: 'Enter information about your readme file under Description heading\n',
         name: 'descriptionInformation'
     },
     {
         type: 'input',
-        message: 'Enter the title for your Installation section',
+        message: 'Enter the title for your Installation section\n',
         name: 'installation'
     },
     {
         type: 'input',
-        message: 'Enter installation instructions for your readme file',
+        message: 'Enter installation instructions for your readme file\n',
         name: 'installationInstructions'
-    }
+    },
+    {
+        type: 'input',
+        message: 'Enter the title for your Usage section\n',
+        name: 'usage'
+    },
+
+    {
+        type: 'input',
+        message: 'Enter usage instructions for your readme file\n',
+        name: 'usageInstructions'
+    },
+
+
+
 
 
 
@@ -58,5 +72,8 @@ inquirer.prompt([
     fs.appendFileSync("README.md", JSON.stringify(response.descriptionInformation) + "\n\n");
     fs.appendFileSync("README.md", JSON.stringify("**" + response.installation + "**") + "\n\n");
     fs.appendFileSync("README.md", JSON.stringify(response.installationInstructions) + "\n\n");
+    fs.appendFileSync("README.md", JSON.stringify("**" + response.usage + "**") + "\n\n");
+    fs.appendFileSync("README.md", JSON.stringify(response.usageInstructions) + "\n\n");
+
 })
 .catch((error) => (console.log(error)))
