@@ -61,6 +61,31 @@ inquirer.prompt([
         name: 'usageInstructions'
     },
 
+    {
+        type: 'input',
+        message: 'Enter the title for your Contribution section\n',
+        name: 'contrubition'
+    },
+
+    {
+        type: 'input',
+        message: 'Enter contribution instructions for your readme file\n',
+        name: 'contributionInstructions'
+    },
+
+    {
+        type: 'input',
+        message: 'Enter the title for your Testing section\n',
+        name: 'testing'
+    },
+
+    {
+        type: 'input',
+        message: 'Enter contribution instructions for your readme file\n',
+        name: 'testingInstructions'
+    },
+
+
 
 
 
@@ -68,12 +93,17 @@ inquirer.prompt([
 
 ]).then((response) => { 
     fs.writeFileSync("README.md", JSON.stringify("**" + response.title + "**") + "\n\n\n");
-    fs.appendFileSync("README.md", JSON.stringify('**' + response.description + "**") + "\n\n");
+    fs.appendFileSync("README.md", JSON.stringify('**' + response.description + ":**") + "\n\n");
     fs.appendFileSync("README.md", JSON.stringify(response.descriptionInformation) + "\n\n");
-    fs.appendFileSync("README.md", JSON.stringify("**" + response.installation + "**") + "\n\n");
+    fs.appendFileSync("README.md", JSON.stringify("**" + response.installation + ":**") + "\n\n");
     fs.appendFileSync("README.md", JSON.stringify(response.installationInstructions) + "\n\n");
-    fs.appendFileSync("README.md", JSON.stringify("**" + response.usage + "**") + "\n\n");
+    fs.appendFileSync("README.md", JSON.stringify("**" + response.usage + ":**") + "\n\n");
     fs.appendFileSync("README.md", JSON.stringify(response.usageInstructions) + "\n\n");
+    fs.appendFileSync("README.md", JSON.stringify(response.contribution) + "\n\n");
+    fs.appendFileSync("README.md", JSON.stringify(response.contributionInstructions) + "\n\n");
+    fs.appendFileSync("README.md", JSON.stringify(response.testing) + "\n\n");
+    fs.appendFileSync("README.md", JSON.stringify(response.testingInstructions) + "\n\n");
+
 
 })
 .catch((error) => (console.log(error)))
