@@ -1,21 +1,21 @@
 "**TITLE**"
 
 
-"**DESCRIPTION:**"
+"**Summary:**"
 
-"To run this file, simply run node index.js on your terminal, enter information in the upcoming prompts, push your code into Github, go to Github, refresh, and see the latest information from your readme file"
+"The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github."
 
 "**INSTALLATION:**"
 
-"Install node.js, Microsoft Visual Studio Code, and npm inquirer"
+"The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github."
 
-"**Usage:**"
+"**USAGE:**"
 
-"Read the instructions below"
+"To run this file, simply run node index.js on your terminal, enter information in the upcoming prompts, push your code into Github, go to Github, refresh, and see the latest information from your readme file"
 
-"**undefined**"
+"**Contribution**"
 
-"Awad"
+"Awad Sharif"
 
 "**Testing**"
 

@@ -81,7 +81,7 @@ inquirer.prompt([
 
     {
         type: 'input',
-        message: 'Enter contribution instructions for your readme file\n',
+        message: 'Enter testing instructions for your readme file\n',
         name: 'testingInstructions'
     },
 
@@ -92,15 +92,26 @@ inquirer.prompt([
 
 
 ]).then((response) => { 
+    // TITLE
     fs.writeFileSync("README.md", JSON.stringify("**" + response.title + "**") + "\n\n\n");
+
+    // DESCRIPTION
     fs.appendFileSync("README.md", JSON.stringify('**' + response.description + ":**") + "\n\n");
     fs.appendFileSync("README.md", JSON.stringify(response.descriptionInformation) + "\n\n");
+
+    // INSTALLATION
     fs.appendFileSync("README.md", JSON.stringify("**" + response.installation + ":**") + "\n\n");
     fs.appendFileSync("README.md", JSON.stringify(response.installationInstructions) + "\n\n");
+
+    // USAGE
     fs.appendFileSync("README.md", JSON.stringify("**" + response.usage + ":**") + "\n\n");
     fs.appendFileSync("README.md", JSON.stringify(response.usageInstructions) + "\n\n");
+
+    //CONTRIBUTION
     fs.appendFileSync("README.md", JSON.stringify("**" + response.contribution + "**") + "\n\n");
     fs.appendFileSync("README.md", JSON.stringify(response.contributionInstructions) + "\n\n");
+
+    // TESTING
     fs.appendFileSync("README.md", JSON.stringify("**" + response.testing + "**") + "\n\n");
     fs.appendFileSync("README.md", JSON.stringify(response.testingInstructions) + "\n\n");
 
