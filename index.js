@@ -82,7 +82,7 @@ inquirer.prompt([
 
     {
         type: 'input',
-        message: 'Enter testing instructions for your readme file\n',
+        message: 'Enter testing instructions for your readme file: \n',
         name: 'testingInstructions'
     },
 
@@ -90,13 +90,13 @@ inquirer.prompt([
 
     {
         type: 'input',
-        message: 'Enter the title for your license section\n',
+        message: 'Enter the title for your license section: \n',
         name: 'licenseTitle'
     },
 
 
     {
-        message: "choose your license",
+        message: "choose your license: \n",
         name: "license",
         type: "list",
         choices: [
@@ -120,19 +120,19 @@ inquirer.prompt([
         // QUESTIONS SECTION
         {
             type: 'input',
-            message: 'Enter the title for the Questions section\n',
+            message: 'Enter the title for the Questions section: \n',
             name: 'question'
         },
 
         {
             type: 'input',
-            message: 'Enter your Github username under the Question section',
+            message: 'Enter your Github username under the Question section: \n',
             name: 'username'
         },
 
         {
             type: 'input',
-            message: 'Enter your Github email address',
+            message: 'Enter your Github email address: \n',
             name: 'email'
         }
 
@@ -166,8 +166,8 @@ inquirer.prompt([
 
     // QUESTIONS
     fs.appendFileSync("README.md", JSON.stringify("**" + response.question+ "**") + "\n\n");
-    fs.appendFileSync("README.md", JSON.stringify(response.username) + "\n");
-    fs.appendFileSync("README.md", JSON.stringify(response.email) + "\n");
+    fs.appendFileSync("README.md", JSON.stringify(`https://github.com/asharif123/${response.username}`) + "\n\n");
+    fs.appendFileSync("README.md", JSON.stringify(response.email) + "\n\n");
     
 
 
