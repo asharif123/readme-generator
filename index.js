@@ -165,8 +165,9 @@ inquirer.prompt([
     fs.appendFileSync("README.md", JSON.stringify(response.license) + "\n\n");
 
     // QUESTIONS
-    fs.appendFileSync("README.md", JSON.stringify("**" + response.licenseTitle + "**") + "\n\n");
-    fs.appendFileSync("README.md", JSON.stringify(response.license) + "\n\n");
+    fs.appendFileSync("README.md", JSON.stringify("**" + response.question+ "**") + "\n\n");
+    fs.appendFileSync("README.md", JSON.stringify(response.username) + "\n");
+    fs.appendFileSync("README.md", JSON.stringify(response.email) + "\n");
     
 
 
