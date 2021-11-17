@@ -115,14 +115,26 @@ inquirer.prompt([
             value:
               "[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)",
           },
-        ],
-    }
+        ]},
 
+        // QUESTIONS SECTION
+        {
+            type: 'input',
+            message: 'Enter the title for the Questions section\n',
+            name: 'question'
+        },
 
+        {
+            type: 'input',
+            message: 'Enter your Github username under the Question section',
+            name: 'username'
+        },
 
-
-
-
+        {
+            type: 'input',
+            message: 'Enter your Github email address',
+            name: 'email'
+        }
 
 ]).then((response) => { 
     // TITLE
@@ -151,6 +163,11 @@ inquirer.prompt([
     // LICENSE
     fs.appendFileSync("README.md", JSON.stringify("**" + response.licenseTitle + "**") + "\n\n");
     fs.appendFileSync("README.md", JSON.stringify(response.license) + "\n\n");
+
+    // QUESTIONS
+    fs.appendFileSync("README.md", JSON.stringify("**" + response.licenseTitle + "**") + "\n\n");
+    fs.appendFileSync("README.md", JSON.stringify(response.license) + "\n\n");
+    
 
 
 
