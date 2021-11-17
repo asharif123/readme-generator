@@ -23,6 +23,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+// takes required inputs to create readme file
 inquirer.prompt([
     {
         type: 'input',
@@ -85,6 +86,38 @@ inquirer.prompt([
         name: 'testingInstructions'
     },
 
+    // LICENSE SECTION
+
+    {
+        type: 'input',
+        message: 'Enter the title for your license section\n',
+        name: 'licenseTitle'
+    },
+
+
+    {
+        message: "choose your license",
+        name: "license",
+        type: "list",
+        choices: [
+          {
+            name: "BSD - 3",
+            value:
+              "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)",
+          },
+          {
+            name: "ZERO",
+            value:
+              "[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)",
+          },
+          {
+            name: "ECLIPSE",
+            value:
+              "[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)",
+          },
+        ],
+    }
+
 
 
 
@@ -93,7 +126,7 @@ inquirer.prompt([
 
 ]).then((response) => { 
     // TITLE
-    fs.writeFileSync("README.md", JSON.stringify("**" + response.title + "**") + "\n\n\n");
+    fs.writeFileSync("README.md", JSON.stringify('**' + response.title + '**') + "\n\n\n");
 
     // DESCRIPTION
     fs.appendFileSync("README.md", JSON.stringify('**' + response.description + ":**") + "\n\n");
@@ -114,6 +147,11 @@ inquirer.prompt([
     // TESTING
     fs.appendFileSync("README.md", JSON.stringify("**" + response.testing + "**") + "\n\n");
     fs.appendFileSync("README.md", JSON.stringify(response.testingInstructions) + "\n\n");
+
+    // LICENSE
+    fs.appendFileSync("README.md", JSON.stringify("**" + response.licenseTitle + "**") + "\n\n");
+    fs.appendFileSync("README.md", JSON.stringify(response.license) + "\n\n");
+
 
 
 })
