@@ -1,43 +1,55 @@
-# TITLE
+# README
 
 
-### DESCRIPTION
+### Description
 
 The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github. To verify installation, run the following flag. If any issue arises, contact Tech support.
 
-### INSTALLATION
+### Installation
 
 The purpose is to create a README generator solely based off of user input
 
-
  I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github
 
-
  To verify installation, run the following flag
-
 
  If any issue arises, contact Tech support
 
 
 
+### Usage
 
-### USAGE
+The purpose is to create a README generator solely based off of user input
 
-The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github. To verify installation, run the following flag. If any issue arises, contact Tech support.
+ I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github
 
-### CONTRIBUTION
+ To verify installation, run the following flag
 
-The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github. To verify installation, run the following flag. If any issue arises, contact Tech support.
+ If any issue arises, contact Tech support
 
-### TESTING
 
-The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github. To verify installation, run the following flag. If any issue arises, contact Tech support.
 
-### LICENSE
+### Contribution
 
-[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+contribution
 
-### QUESTIONS
+### Testing
+
+The purpose is to create a README generator solely based off of user input
+
+ I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github
+
+ To verify installation, run the following flag
+
+ If any issue arises, contact Tech support
+
+
+
+### License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+### Questions?
 
 Github link: https://github.com/asharif123
 

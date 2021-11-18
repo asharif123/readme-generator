@@ -30,42 +30,23 @@ inquirer.prompt([
         message: 'Enter the title of your readme file: \n\n',
         name: 'title'
     },
+
     {
         type: 'input',
-        message: 'Enter the title for your Description section: \n\n',
-        name: 'description'
-    },
-    {
-        type: 'input',
-        message: 'Enter information about your readme file under Description heading: \n\n',
+        message: 'Enter information about your readme file: \n\n',
         name: 'descriptionInformation'
     },
+
     {
         type: 'input',
-        message: 'Enter the title for your Installation section: \n\n',
-        name: 'installation'
-    },
-    {
-        type: 'input',
-        message: 'Enter installation instructions for your readme file (Note: separate each individual step with a period): \n\n',
+        message: 'Enter step by step installation instructions (Note: separate each individual step with a period): \n\n',
         name: 'installationInstructions'
     },
-    {
-        type: 'input',
-        message: 'Enter the title for your Usage section: \n\n',
-        name: 'usage'
-    },
 
     {
         type: 'input',
-        message: 'Enter usage instructions for your readme file: \n\n',
+        message: 'Enter step by step usage instructions (Note: separate each individual step with a period): \n\n',
         name: 'usageInstructions'
-    },
-
-    {
-        type: 'input',
-        message: 'Enter the title for your Contribution section: \n\n',
-        name: 'contribution'
     },
 
     {
@@ -76,24 +57,11 @@ inquirer.prompt([
 
     {
         type: 'input',
-        message: 'Enter the title for your Testing section: \n\n',
-        name: 'testing'
-    },
-
-    {
-        type: 'input',
-        message: 'Enter testing instructions for your readme file. (Note: separate each individual step with a period): \n\n',
+        message: 'Enter step-by-step testing instructions. (Note: separate each individual step with a period): \n\n',
         name: 'testingInstructions'
     },
 
     // LICENSE SECTION
-
-    {
-        type: 'input',
-        message: 'Enter the title for your license section: \n\n',
-        name: 'licenseTitle'
-    },
-
 
     {
         message: "choose your license: \n\n",
@@ -138,11 +106,6 @@ inquirer.prompt([
         ]},
 
         // QUESTIONS SECTION
-        {
-            type: 'input',
-            message: 'Enter the title for the Questions section: \n\n',
-            name: 'question'
-        },
 
         {
             type: 'input',
@@ -161,32 +124,32 @@ inquirer.prompt([
     fs.writeFileSync("README.md", '# ' + response.title + "\n\n\n");
 
     // DESCRIPTION
-    fs.appendFileSync("README.md", '### ' + response.description + "\n\n");
+    fs.appendFileSync("README.md", '### ' + "Description" + "\n\n");
     fs.appendFileSync("README.md", response.descriptionInformation + "\n\n");
 
     // INSTALLATION
-    fs.appendFileSync("README.md", '### '  + response.installation + "\n\n");
+    fs.appendFileSync("README.md", '### '  + "Installation" + "\n\n");
     // create a separate line for each installation instruction ending with a period.
     fs.appendFileSync("README.md", response.installationInstructions.replaceAll('.', '\n\n') + "\n\n");
 
     // USAGE
-    fs.appendFileSync("README.md", '### ' + response.usage + "\n\n");
-    fs.appendFileSync("README.md", response.usageInstructions + "\n\n");
+    fs.appendFileSync("README.md", '### ' + "Usage" + "\n\n");
+    fs.appendFileSync("README.md", response.usageInstructions.replaceAll('.', '\n\n') + "\n\n");
 
     //CONTRIBUTION
-    fs.appendFileSync("README.md", '### ' + response.contribution + "\n\n");
-    fs.appendFileSync("README.md", response.contributionInstructions + "\n\n");
+    fs.appendFileSync("README.md", '### ' + "Contribution" + "\n\n");
+    fs.appendFileSync("README.md", response.contributionInstructions.replaceAll('.', '\n\n') + "\n\n");
 
     // TESTING
-    fs.appendFileSync("README.md", '### ' + response.testing + "\n\n");
-    fs.appendFileSync("README.md", response.testingInstructions + "\n\n");
+    fs.appendFileSync("README.md", '### ' + "Testing" + "\n\n");
+    fs.appendFileSync("README.md", response.testingInstructions.replaceAll('.', '\n\n') + "\n\n");
 
     // LICENSE
-    fs.appendFileSync("README.md", '### ' + response.licenseTitle + "\n\n");
+    fs.appendFileSync("README.md", '### ' + "License" + "\n\n");
     fs.appendFileSync("README.md", response.license + "\n\n");
 
     // QUESTIONS
-    fs.appendFileSync("README.md", '### ' + response.question + "\n\n");
+    fs.appendFileSync("README.md", '### ' + "Questions?" + "\n\n");
     fs.appendFileSync("README.md", `Github link: https://github.com/${response.username}` + "\n\n");
     fs.appendFileSync("README.md", "For questions email me at: " + response.email + "\n\n");
 
