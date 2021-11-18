@@ -27,62 +27,62 @@ const fs = require("fs");
 inquirer.prompt([
     {
         type: 'input',
-        message: 'Enter the title of your readme file\n',
+        message: 'Enter the title of your readme file: \n\n',
         name: 'title'
     },
     {
         type: 'input',
-        message: 'Enter the title for your Description section\n',
+        message: 'Enter the title for your Description section: \n\n',
         name: 'description'
     },
     {
         type: 'input',
-        message: 'Enter information about your readme file under Description heading\n',
+        message: 'Enter information about your readme file under Description heading: \n\n',
         name: 'descriptionInformation'
     },
     {
         type: 'input',
-        message: 'Enter the title for your Installation section\n',
+        message: 'Enter the title for your Installation section: \n\n',
         name: 'installation'
     },
     {
         type: 'input',
-        message: 'Enter installation instructions for your readme file\n',
+        message: 'Enter installation instructions for your readme file: \n\n',
         name: 'installationInstructions'
     },
     {
         type: 'input',
-        message: 'Enter the title for your Usage section\n',
+        message: 'Enter the title for your Usage section: \n\n',
         name: 'usage'
     },
 
     {
         type: 'input',
-        message: 'Enter usage instructions for your readme file\n',
+        message: 'Enter usage instructions for your readme file: \n\n',
         name: 'usageInstructions'
     },
 
     {
         type: 'input',
-        message: 'Enter the title for your Contribution section\n',
+        message: 'Enter the title for your Contribution section: \n\n',
         name: 'contribution'
     },
 
     {
         type: 'input',
-        message: 'Enter contribution instructions for your readme file\n',
+        message: 'Enter contribution instructions for your readme file: \n\n',
         name: 'contributionInstructions'
     },
 
     {
         type: 'input',
-        message: 'Enter the title for your Testing section\n',
+        message: 'Enter the title for your Testing section: \n\n',
         name: 'testing'
     },
 
     {
         type: 'input',
-        message: 'Enter testing instructions for your readme file: \n',
+        message: 'Enter testing instructions for your readme file: \n\n',
         name: 'testingInstructions'
     },
 
@@ -90,13 +90,13 @@ inquirer.prompt([
 
     {
         type: 'input',
-        message: 'Enter the title for your license section: \n',
+        message: 'Enter the title for your license section: \n\n',
         name: 'licenseTitle'
     },
 
 
     {
-        message: "choose your license: \n",
+        message: "choose your license: \n\n",
         name: "license",
         type: "list",
         choices: [
@@ -115,6 +115,26 @@ inquirer.prompt([
             value:
               "[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)",
           },
+          {
+            name: "GNU",
+            value: 
+            "[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)"
+          },
+
+          {
+            name: "MIT",
+            value: 
+            "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+          },
+
+          {
+            name: "Perl",
+            value: 
+            "[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)"
+          },
+
+
+
         ]},
 
         // QUESTIONS SECTION
@@ -141,36 +161,32 @@ inquirer.prompt([
     fs.writeFileSync("README.md", '# ' + response.title + "\n\n\n");
 
     // DESCRIPTION
-    fs.appendFileSync("README.md", '## ' + response.description + "\n\n");
+    fs.appendFileSync("README.md", '### ' + response.description + "\n\n");
     fs.appendFileSync("README.md", response.descriptionInformation + "\n\n");
 
     // INSTALLATION
-    fs.appendFileSync("README.md", "**" + response.installation + ":**" + "\n\n");
+    fs.appendFileSync("README.md", '### '  + response.installation + "\n\n");
     fs.appendFileSync("README.md", response.installationInstructions + "\n\n");
 
     // USAGE
-    fs.appendFileSync("README.md", "**" + response.usage + ":**" + "\n\n");
+    fs.appendFileSync("README.md", '### ' + response.usage + "\n\n");
     fs.appendFileSync("README.md", response.usageInstructions + "\n\n");
 
     //CONTRIBUTION
-    fs.appendFileSync("README.md", "**" + response.contribution + "**" + "\n\n");
+    fs.appendFileSync("README.md", '### ' + response.contribution + "\n\n");
     fs.appendFileSync("README.md", response.contributionInstructions + "\n\n");
 
     // TESTING
-    fs.appendFileSync("README.md", "**" + response.testing + "**" + "\n\n");
+    fs.appendFileSync("README.md", '### ' + response.testing + "\n\n");
     fs.appendFileSync("README.md", response.testingInstructions + "\n\n");
 
     // LICENSE
-    fs.appendFileSync("README.md", "**" + response.licenseTitle + "**" + "\n\n");
+    fs.appendFileSync("README.md", '### ' + response.licenseTitle + "\n\n");
     fs.appendFileSync("README.md", response.license + "\n\n");
 
     // QUESTIONS
-    fs.appendFileSync("README.md", "**" + response.question + "**" + "\n\n");
+    fs.appendFileSync("README.md", '### ' + response.question + "\n\n");
     fs.appendFileSync("README.md", `https://github.com/${response.username}` + "\n\n");
     fs.appendFileSync("README.md", "For questions email me at: " + response.email + "\n\n");
-    
-
-
-
 })
 .catch((error) => (console.log(error)))
