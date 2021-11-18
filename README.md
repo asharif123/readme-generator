@@ -1,4 +1,6 @@
-# README
+### Table of Contents
+
+=================# TITLE
 
 
 ### Description
@@ -7,41 +9,31 @@ The purpose is to create a README generator solely based off of user input. I ha
 
 ### Installation
 
-The purpose is to create a README generator solely based off of user input
+To run this file, simply run node index
 
- I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github
-
- To verify installation, run the following flag
-
- If any issue arises, contact Tech support
+js on your terminal, enter information in the upcoming prompts, push your code into Github, go to Github, refresh, and see the latest information from your readme file
 
 
 
 ### Usage
 
-The purpose is to create a README generator solely based off of user input
+To run this file, simply run node index
 
- I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github
-
- To verify installation, run the following flag
-
- If any issue arises, contact Tech support
+js on your terminal, enter information in the upcoming prompts, push your code into Github, go to Github, refresh, and see the latest information from your readme file
 
 
 
 ### Contribution
 
-contribution
+To run this file, simply run node index
+
+js on your terminal, enter information in the upcoming prompts, push your code into Github, go to Github, refresh, and see the latest information from your readme file
 
 ### Testing
 
-The purpose is to create a README generator solely based off of user input
+To run this file, simply run node index
 
- I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github
-
- To verify installation, run the following flag
-
- If any issue arises, contact Tech support
+js on your terminal, enter information in the upcoming prompts, push your code into Github, go to Github, refresh, and see the latest information from your readme file
 
 
 
@@ -55,6 +47,3 @@ Github link: https://github.com/asharif123
 
 For questions email me at: awadsharif9@gmail.com
 
-### Table of Contents
-
-=================
