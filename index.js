@@ -138,10 +138,10 @@ inquirer.prompt([
 
 ]).then((response) => { 
     // TITLE
-    fs.writeFileSync("README.md", '**' + response.title + '**' + "\n\n\n");
+    fs.writeFileSync("README.md", '# ' + response.title + "\n\n\n");
 
     // DESCRIPTION
-    fs.appendFileSync("README.md", '**' + response.description + ":**" + "\n\n");
+    fs.appendFileSync("README.md", '## ' + response.description + "\n\n");
     fs.appendFileSync("README.md", response.descriptionInformation + "\n\n");
 
     // INSTALLATION
