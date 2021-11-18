@@ -120,8 +120,12 @@ inquirer.prompt([
         }
 
 ]).then((response) => { 
+
+    // TABLE OF CONTENTS
+    fs.writeFileSync("README.md", "### " + "Table of Contents\n\n" + "=================")
+
     // TITLE
-    fs.writeFileSync("README.md", '# ' + response.title + "\n\n\n");
+    fs.appendFileSync("README.md", '# ' + response.title + "\n\n\n");
 
     // DESCRIPTION
     fs.appendFileSync("README.md", '### ' + "Description" + "\n\n");
@@ -153,7 +157,5 @@ inquirer.prompt([
     fs.appendFileSync("README.md", `Github link: https://github.com/${response.username}` + "\n\n");
     fs.appendFileSync("README.md", "For questions email me at: " + response.email + "\n\n");
 
-    // TABLE OF CONTENTS
-    fs.appendFileSync("README.md", "### " + "Table of Contents\n\n" + "=================")
 })
 .catch((error) => (console.log(error)))
