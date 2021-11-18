@@ -138,36 +138,36 @@ inquirer.prompt([
 
 ]).then((response) => { 
     // TITLE
-    fs.writeFileSync("README.md", JSON.stringify('**' + response.title + '**') + "\n\n\n");
+    fs.writeFileSync("README.md", '**' + response.title + '**' + "\n\n\n");
 
     // DESCRIPTION
-    fs.appendFileSync("README.md", JSON.stringify('**' + response.description + ":**") + "\n\n");
-    fs.appendFileSync("README.md", JSON.stringify(response.descriptionInformation) + "\n\n");
+    fs.appendFileSync("README.md", '**' + response.description + ":**" + "\n\n");
+    fs.appendFileSync("README.md", response.descriptionInformation + "\n\n");
 
     // INSTALLATION
-    fs.appendFileSync("README.md", JSON.stringify("**" + response.installation + ":**") + "\n\n");
-    fs.appendFileSync("README.md", JSON.stringify(response.installationInstructions) + "\n\n");
+    fs.appendFileSync("README.md", "**" + response.installation + ":**" + "\n\n");
+    fs.appendFileSync("README.md", response.installationInstructions + "\n\n");
 
     // USAGE
-    fs.appendFileSync("README.md", JSON.stringify("**" + response.usage + ":**") + "\n\n");
-    fs.appendFileSync("README.md", JSON.stringify(response.usageInstructions) + "\n\n");
+    fs.appendFileSync("README.md", "**" + response.usage + ":**" + "\n\n");
+    fs.appendFileSync("README.md", response.usageInstructions + "\n\n");
 
     //CONTRIBUTION
-    fs.appendFileSync("README.md", JSON.stringify("**" + response.contribution + "**") + "\n\n");
-    fs.appendFileSync("README.md", JSON.stringify(response.contributionInstructions) + "\n\n");
+    fs.appendFileSync("README.md", "**" + response.contribution + "**" + "\n\n");
+    fs.appendFileSync("README.md", response.contributionInstructions + "\n\n");
 
     // TESTING
-    fs.appendFileSync("README.md", JSON.stringify("**" + response.testing + "**") + "\n\n");
-    fs.appendFileSync("README.md", JSON.stringify(response.testingInstructions) + "\n\n");
+    fs.appendFileSync("README.md", "**" + response.testing + "**" + "\n\n");
+    fs.appendFileSync("README.md", response.testingInstructions + "\n\n");
 
     // LICENSE
-    fs.appendFileSync("README.md", JSON.stringify("**" + response.licenseTitle + "**") + "\n\n");
-    fs.appendFileSync("README.md", JSON.stringify(response.license) + "\n\n");
+    fs.appendFileSync("README.md", "**" + response.licenseTitle + "**" + "\n\n");
+    fs.appendFileSync("README.md", response.license + "\n\n");
 
     // QUESTIONS
-    fs.appendFileSync("README.md", JSON.stringify("**" + response.question+ "**") + "\n\n");
-    fs.appendFileSync("README.md", JSON.stringify(`https://github.com/asharif123/${response.username}`) + "\n\n");
-    fs.appendFileSync("README.md", JSON.stringify(response.email) + "\n\n");
+    fs.appendFileSync("README.md", "**" + response.question + "**" + "\n\n");
+    fs.appendFileSync("README.md", `https://github.com/${response.username}` + "\n\n");
+    fs.appendFileSync("README.md", "For questions email me at: " + response.email + "\n\n");
     
 
 

@@ -1,33 +1,33 @@
-"**TITLE**"
+**TITLE**
 
 
-"**DESCRIPTION:**"
+**DESCRIPTION:**
 
-"The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github."
+The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github.
 
-"**INSTALLATION:**"
+**INSTALLATION:**
 
-"The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github."
+The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github.
 
-"**USAGE:**"
+**USAGE:**
 
-"The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github."
+The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github.
 
-"**CONTRIBUTION**"
+**TITLE**
 
-"The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github."
+The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github.
 
-"**TESTING**"
+**TESTING**
 
-"The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github."
+The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github.
 
-"**LICENSE**"
+**LICENSE**
 
-"[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)"
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
-"**QUESTIONS**"
+**QUESTIONS**
 
-"https://github.com/asharif123/asharif123"
+https://github.com/asharif123
 
-"awadsharif9@gmail.com"
+For questions email me at: awadsharif9@gmail.com
 
