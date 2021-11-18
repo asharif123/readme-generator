@@ -47,7 +47,7 @@ inquirer.prompt([
     },
     {
         type: 'input',
-        message: 'Enter installation instructions for your readme file: \n\n',
+        message: 'Enter installation instructions for your readme file (Note: separate each individual step with a period): \n\n',
         name: 'installationInstructions'
     },
     {
@@ -82,7 +82,7 @@ inquirer.prompt([
 
     {
         type: 'input',
-        message: 'Enter testing instructions for your readme file: \n\n',
+        message: 'Enter testing instructions for your readme file. (Note: separate each individual step with a period): \n\n',
         name: 'testingInstructions'
     },
 
@@ -140,19 +140,19 @@ inquirer.prompt([
         // QUESTIONS SECTION
         {
             type: 'input',
-            message: 'Enter the title for the Questions section: \n',
+            message: 'Enter the title for the Questions section: \n\n',
             name: 'question'
         },
 
         {
             type: 'input',
-            message: 'Enter your Github username under the Question section: \n',
+            message: 'Enter your Github username under the Question section: \n\n',
             name: 'username'
         },
 
         {
             type: 'input',
-            message: 'Enter your Github email address: \n',
+            message: 'Enter your Github email address: \n\n',
             name: 'email'
         }
 
@@ -166,7 +166,8 @@ inquirer.prompt([
 
     // INSTALLATION
     fs.appendFileSync("README.md", '### '  + response.installation + "\n\n");
-    fs.appendFileSync("README.md", response.installationInstructions + "\n\n");
+    // create a separate line for each installation instruction ending with a period.
+    fs.appendFileSync("README.md", response.installationInstructions.replaceAll('.', '\n\n') + "\n\n");
 
     // USAGE
     fs.appendFileSync("README.md", '### ' + response.usage + "\n\n");
@@ -186,7 +187,10 @@ inquirer.prompt([
 
     // QUESTIONS
     fs.appendFileSync("README.md", '### ' + response.question + "\n\n");
-    fs.appendFileSync("README.md", `https://github.com/${response.username}` + "\n\n");
+    fs.appendFileSync("README.md", `Github link: https://github.com/${response.username}` + "\n\n");
     fs.appendFileSync("README.md", "For questions email me at: " + response.email + "\n\n");
+
+    // TABLE OF CONTENTS
+    fs.appendFileSync("README.md", "### " + "Table of Contents\n\n" + "=================")
 })
 .catch((error) => (console.log(error)))
