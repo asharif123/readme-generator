@@ -1,11 +1,11 @@
 ### Table of Contents
 
-=================# TITLE
+# TITLE
 
 
 ### Description
 
-The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github. To verify installation, run the following flag. If any issue arises, contact Tech support.
+ The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github. To verify installation, run the following flag. If any issue arises, contact Tech support.
 
 ### Installation
 
@@ -29,6 +29,8 @@ To run this file, simply run node index
 
 js on your terminal, enter information in the upcoming prompts, push your code into Github, go to Github, refresh, and see the latest information from your readme file
 
+
+
 ### Testing
 
 To run this file, simply run node index
@@ -39,7 +41,7 @@ js on your terminal, enter information in the upcoming prompts, push your code i
 
 ### License
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
 
 ### Questions?
 

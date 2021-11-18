@@ -122,10 +122,10 @@ inquirer.prompt([
 ]).then((response) => { 
 
     // TABLE OF CONTENTS
-    fs.writeFileSync("README.md", "### " + "Table of Contents\n\n" + "=================")
+    fs.writeFileSync("README.md", "### " + "Table of Contents\n\n")
 
     // TITLE
-    fs.appendFileSync("README.md", '# ' + response.title + "\n\n\n");
+    fs.appendFileSync("README.md", "# " + response.title + "\n\n\n");
 
     // DESCRIPTION
     fs.appendFileSync("README.md", '### ' + "Description" + "\n\n");
