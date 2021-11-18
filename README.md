@@ -1,11 +1,28 @@
-### Table of Contents
+## Table of Contents
 
-# TITLE
+
+1. [My first title](#my-first-title)
+
+2. [Description](#description)
+
+2. [Installation](#installation)
+
+2. [Usage](#usage)
+
+2. [Contribution](#contribution)
+
+2. [Testing](#testing)
+
+2. [License](#license)
+
+2. [Questions?](#questions)
+
+# My first title
 
 
 ### Description
 
- The purpose is to create a README generator solely based off of user input. I have learned how to utilize CLI and inquirer documentation to dynamically generate a readme file without needing to use Github. To verify installation, run the following flag. If any issue arises, contact Tech support.
+To run this file, simply run node index.js on your terminal, enter information in the upcoming prompts, push your code into Github, go to Github, refresh, and see the latest information from your readme file.
 
 ### Installation
 
@@ -41,7 +58,7 @@ js on your terminal, enter information in the upcoming prompts, push your code i
 
 ### License
 
-[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)
+[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 
 ### Questions?
 

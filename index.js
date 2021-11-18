@@ -122,7 +122,17 @@ inquirer.prompt([
 ]).then((response) => { 
 
     // TABLE OF CONTENTS
-    fs.writeFileSync("README.md", "### " + "Table of Contents\n\n")
+    fs.writeFileSync("README.md", "## " + "Table of Contents\n\n\n")
+    // backslash tells jevascript the square brackets are literals
+    fs.appendFileSync('README.md', "1. " + `\[${response.title}\](#${response.title.toLowerCase().replaceAll(' ', '-')})\n\n`)
+    fs.appendFileSync('README.md', "2. " + "[Description](#description)\n\n")
+    fs.appendFileSync('README.md', "2. " + "[Installation](#installation)\n\n")
+    fs.appendFileSync('README.md', "2. " + "[Usage](#usage)\n\n")
+    fs.appendFileSync('README.md', "2. " + "[Contribution](#contribution)\n\n")
+    fs.appendFileSync('README.md', "2. " + "[Testing](#testing)\n\n")
+    fs.appendFileSync('README.md', "2. " + "[License](#license)\n\n")
+    fs.appendFileSync('README.md', "2. " + "[Questions?](#questions)\n\n")
+
 
     // TITLE
     fs.appendFileSync("README.md", "# " + response.title + "\n\n\n");
