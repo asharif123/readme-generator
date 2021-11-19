@@ -1,7 +1,7 @@
 ## Table of Contents
 
 
-1. [My first title](#my-first-title)
+1. [TITLE](#title)
 
 2. [Description](#description)
 
@@ -17,48 +17,50 @@
 
 2. [Questions?](#questions)
 
-# My first title
+# TITLE
 
 
 ### Description
 
-To run this file, simply run node index.js on your terminal, enter information in the upcoming prompts, push your code into Github, go to Github, refresh, and see the latest information from your readme file.
+Run this file. Install this file. Generate the results.
 
 ### Installation
 
-To run this file, simply run node index
+Run this file
 
-js on your terminal, enter information in the upcoming prompts, push your code into Github, go to Github, refresh, and see the latest information from your readme file
+ Install this file
+
+ Generate the results
 
 
 
 ### Usage
 
-To run this file, simply run node index
+Run this file
 
-js on your terminal, enter information in the upcoming prompts, push your code into Github, go to Github, refresh, and see the latest information from your readme file
+ Install this file
+
+ Generate the results
 
 
 
 ### Contribution
 
-To run this file, simply run node index
-
-js on your terminal, enter information in the upcoming prompts, push your code into Github, go to Github, refresh, and see the latest information from your readme file
-
-
+asharif123
 
 ### Testing
 
-To run this file, simply run node index
+Run this file
 
-js on your terminal, enter information in the upcoming prompts, push your code into Github, go to Github, refresh, and see the latest information from your readme file
+ Install this file
+
+ Generate the results
 
 
 
 ### License
 
-[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Questions?
 
